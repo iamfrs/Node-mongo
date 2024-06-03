@@ -7,7 +7,7 @@ require('dotenv').config();
 
 mongoose
   // .connect(process.env.MONGO_DB_URL)
-  .connect("mongodb+srv://farissalmank289:PHcsD7S8DO2CXOpC@cluster0.9kohkcc.mongodb.net/node-mongo")
+  .connect("mongodb+srv://farissalmank289:70xwtaxiOwgH53VK@cluster0.sujj9hw.mongodb.net/node-mongo")
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
