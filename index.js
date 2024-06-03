@@ -6,7 +6,7 @@ const authRoutes = require('./app/routers/loginRouter');
 require('dotenv').config();
 
 mongoose
-  .connect("mongodb://localhost:27017/Node-mongo")
+  .connect(process.env.MONGO_DB_URL)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
